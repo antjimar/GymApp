@@ -13,12 +13,14 @@
 		A9212A9B1B78E2450002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212A9A1B78E2450002A417 /* Images.xcassets */; };
 		A9212A9E1B78E2450002A417 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9212A9C1B78E2450002A417 /* LaunchScreen.xib */; };
 		A9212AAA1B78E2450002A417 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212AA91B78E2450002A417 /* GymAppTests.swift */; };
-		A9212ABC1B78E42B0002A417 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212ABB1B78E42B0002A417 /* InterfaceController.swift */; };
 		A9212ABE1B78E42B0002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212ABD1B78E42B0002A417 /* Images.xcassets */; };
 		A9212AC21B78E42B0002A417 /* GymApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */; };
 		A9212ACA1B78E42B0002A417 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9212AC81B78E42B0002A417 /* Interface.storyboard */; };
 		A9212ACC1B78E42B0002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212ACB1B78E42B0002A417 /* Images.xcassets */; };
 		A9212ACF1B78E42B0002A417 /* GymApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9212AD81B78E5210002A417 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212AD71B78E5210002A417 /* MenuInterfaceController.swift */; };
+		A9212ADA1B78E56D0002A417 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212AD91B78E56D0002A417 /* RowController.swift */; };
+		A9212ADD1B78EC9E0002A417 /* LocationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212ADC1B78EC9E0002A417 /* LocationInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,12 +74,14 @@
 		A9212AA91B78E2450002A417 /* GymAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppTests.swift; sourceTree = "<group>"; };
 		A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GymApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9212ABA1B78E42B0002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9212ABB1B78E42B0002A417 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A9212ABD1B78E42B0002A417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GymApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9212AC71B78E42B0002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9212AC91B78E42B0002A417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A9212ACB1B78E42B0002A417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9212AD71B78E5210002A417 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
+		A9212AD91B78E56D0002A417 /* RowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		A9212ADC1B78EC9E0002A417 /* LocationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +172,8 @@
 		A9212AB81B78E42B0002A417 /* GymApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A9212ABB1B78E42B0002A417 /* InterfaceController.swift */,
+				A9212ADE1B78ECAA0002A417 /* Location */,
+				A9212ADB1B78E5730002A417 /* Menu */,
 				A9212ABD1B78E42B0002A417 /* Images.xcassets */,
 				A9212AB91B78E42B0002A417 /* Supporting Files */,
 			);
@@ -199,6 +204,23 @@
 				A9212AC71B78E42B0002A417 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9212ADB1B78E5730002A417 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A9212AD71B78E5210002A417 /* MenuInterfaceController.swift */,
+				A9212AD91B78E56D0002A417 /* RowController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		A9212ADE1B78ECAA0002A417 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				A9212ADC1B78EC9E0002A417 /* LocationInterfaceController.swift */,
+			);
+			name = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9212ABC1B78E42B0002A417 /* InterfaceController.swift in Sources */,
+				A9212ADA1B78E56D0002A417 /* RowController.swift in Sources */,
+				A9212AD81B78E5210002A417 /* MenuInterfaceController.swift in Sources */,
+				A9212ADD1B78EC9E0002A417 /* LocationInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +627,7 @@
 		A9212AD41B78E42B0002A417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -611,12 +636,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A9212AD51B78E42B0002A417 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "GymApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";

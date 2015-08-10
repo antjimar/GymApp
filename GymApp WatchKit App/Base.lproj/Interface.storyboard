@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Menu Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="MenuInterfaceController" customModule="GymApp_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="1yK-Qe-ptJ">
+                            <items>
+                                <tableRow identifier="myRow" id="gFZ-bO-Ixu" customClass="RowController" customModule="GymApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="5s4-hJ-jkE">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="2" id="CoB-DX-geh">
+                                                <color key="textColor" red="0.92549019610000005" green="0.1529411765" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="CoB-DX-geh" id="I9n-fk-1Y2"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="1yK-Qe-ptJ" id="xU2-Z5-rwu"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="434" y="407"/>
+        </scene>
+        <!--location-->
+        <scene sceneID="aiZ-vg-4uh">
+            <objects>
+                <controller identifier="location" id="DWD-87-VVg" customClass="LocationInterfaceController" customModule="GymApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="94h-YY-iyB">
+                            <items>
+                                <map height="100" alignment="left" id="Pu2-HS-J5d"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="685" y="408"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.92549019610000005" green="0.1529411765" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
