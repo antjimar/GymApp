@@ -13,6 +13,12 @@
 		A9212A9B1B78E2450002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212A9A1B78E2450002A417 /* Images.xcassets */; };
 		A9212A9E1B78E2450002A417 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9212A9C1B78E2450002A417 /* LaunchScreen.xib */; };
 		A9212AAA1B78E2450002A417 /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212AA91B78E2450002A417 /* GymAppTests.swift */; };
+		A9212ABC1B78E42B0002A417 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212ABB1B78E42B0002A417 /* InterfaceController.swift */; };
+		A9212ABE1B78E42B0002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212ABD1B78E42B0002A417 /* Images.xcassets */; };
+		A9212AC21B78E42B0002A417 /* GymApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */; };
+		A9212ACA1B78E42B0002A417 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9212AC81B78E42B0002A417 /* Interface.storyboard */; };
+		A9212ACC1B78E42B0002A417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9212ACB1B78E42B0002A417 /* Images.xcassets */; };
+		A9212ACF1B78E42B0002A417 /* GymApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,35 @@
 			remoteGlobalIDString = A9212A8D1B78E2450002A417;
 			remoteInfo = GymApp;
 		};
+		A9212AC31B78E42B0002A417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9212A861B78E2450002A417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9212AC01B78E42B0002A417;
+			remoteInfo = "GymApp WatchKit App";
+		};
+		A9212ACD1B78E42B0002A417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9212A861B78E2450002A417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9212AB61B78E42B0002A417;
+			remoteInfo = "GymApp WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9212AD61B78E42B0002A417 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9212ACF1B78E42B0002A417 /* GymApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A9212A8E1B78E2450002A417 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +70,14 @@
 		A9212AA31B78E2450002A417 /* GymAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9212AA81B78E2450002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9212AA91B78E2450002A417 /* GymAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppTests.swift; sourceTree = "<group>"; };
+		A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GymApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9212ABA1B78E42B0002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9212ABB1B78E42B0002A417 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A9212ABD1B78E42B0002A417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GymApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9212AC71B78E42B0002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9212AC91B78E42B0002A417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A9212ACB1B78E42B0002A417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9212AB41B78E42B0002A417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +110,8 @@
 			children = (
 				A9212A901B78E2450002A417 /* GymApp */,
 				A9212AA61B78E2450002A417 /* GymAppTests */,
+				A9212AB81B78E42B0002A417 /* GymApp WatchKit Extension */,
+				A9212AC51B78E42B0002A417 /* GymApp WatchKit App */,
 				A9212A8F1B78E2450002A417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +121,8 @@
 			children = (
 				A9212A8E1B78E2450002A417 /* GymApp.app */,
 				A9212AA31B78E2450002A417 /* GymAppTests.xctest */,
+				A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */,
+				A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +165,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A9212AB81B78E42B0002A417 /* GymApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9212ABB1B78E42B0002A417 /* InterfaceController.swift */,
+				A9212ABD1B78E42B0002A417 /* Images.xcassets */,
+				A9212AB91B78E42B0002A417 /* Supporting Files */,
+			);
+			path = "GymApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A9212AB91B78E42B0002A417 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9212ABA1B78E42B0002A417 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9212AC51B78E42B0002A417 /* GymApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A9212AC81B78E42B0002A417 /* Interface.storyboard */,
+				A9212ACB1B78E42B0002A417 /* Images.xcassets */,
+				A9212AC61B78E42B0002A417 /* Supporting Files */,
+			);
+			path = "GymApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		A9212AC61B78E42B0002A417 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9212AC71B78E42B0002A417 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +211,12 @@
 				A9212A8A1B78E2450002A417 /* Sources */,
 				A9212A8B1B78E2450002A417 /* Frameworks */,
 				A9212A8C1B78E2450002A417 /* Resources */,
+				A9212AD61B78E42B0002A417 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9212ACE1B78E42B0002A417 /* PBXTargetDependency */,
 			);
 			name = GymApp;
 			productName = GymApp;
@@ -150,6 +241,39 @@
 			productReference = A9212AA31B78E2450002A417 /* GymAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A9212AB61B78E42B0002A417 /* GymApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9212AD31B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit Extension" */;
+			buildPhases = (
+				A9212AB31B78E42B0002A417 /* Sources */,
+				A9212AB41B78E42B0002A417 /* Frameworks */,
+				A9212AB51B78E42B0002A417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9212AC41B78E42B0002A417 /* PBXTargetDependency */,
+			);
+			name = "GymApp WatchKit Extension";
+			productName = "GymApp WatchKit Extension";
+			productReference = A9212AB71B78E42B0002A417 /* GymApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A9212AC01B78E42B0002A417 /* GymApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9212AD01B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit App" */;
+			buildPhases = (
+				A9212ABF1B78E42B0002A417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GymApp WatchKit App";
+			productName = "GymApp WatchKit App";
+			productReference = A9212AC11B78E42B0002A417 /* GymApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +289,12 @@
 					A9212AA21B78E2450002A417 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A9212A8D1B78E2450002A417;
+					};
+					A9212AB61B78E42B0002A417 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A9212AC01B78E42B0002A417 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +313,8 @@
 			targets = (
 				A9212A8D1B78E2450002A417 /* GymApp */,
 				A9212AA21B78E2450002A417 /* GymAppTests */,
+				A9212AB61B78E42B0002A417 /* GymApp WatchKit Extension */,
+				A9212AC01B78E42B0002A417 /* GymApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +334,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9212AB51B78E42B0002A417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9212AC21B78E42B0002A417 /* GymApp WatchKit App.app in Resources */,
+				A9212ABE1B78E42B0002A417 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9212ABF1B78E42B0002A417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9212ACA1B78E42B0002A417 /* Interface.storyboard in Resources */,
+				A9212ACC1B78E42B0002A417 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +375,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9212AB31B78E42B0002A417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9212ABC1B78E42B0002A417 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +390,16 @@
 			isa = PBXTargetDependency;
 			target = A9212A8D1B78E2450002A417 /* GymApp */;
 			targetProxy = A9212AA41B78E2450002A417 /* PBXContainerItemProxy */;
+		};
+		A9212AC41B78E42B0002A417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9212AC01B78E42B0002A417 /* GymApp WatchKit App */;
+			targetProxy = A9212AC31B78E42B0002A417 /* PBXContainerItemProxy */;
+		};
+		A9212ACE1B78E42B0002A417 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9212AB61B78E42B0002A417 /* GymApp WatchKit Extension */;
+			targetProxy = A9212ACD1B78E42B0002A417 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +418,14 @@
 				A9212A9D1B78E2450002A417 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A9212AC81B78E42B0002A417 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9212AC91B78E42B0002A417 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +568,62 @@
 			};
 			name = Release;
 		};
+		A9212AD11B78E42B0002A417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = GymApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GymApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A9212AD21B78E42B0002A417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = GymApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GymApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A9212AD41B78E42B0002A417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GymApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9212AD51B78E42B0002A417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GymApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +649,22 @@
 			buildConfigurations = (
 				A9212AB11B78E2450002A417 /* Debug */,
 				A9212AB21B78E2450002A417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9212AD01B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9212AD11B78E42B0002A417 /* Debug */,
+				A9212AD21B78E42B0002A417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9212AD31B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9212AD41B78E42B0002A417 /* Debug */,
+				A9212AD51B78E42B0002A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
