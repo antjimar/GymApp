@@ -14,4 +14,9 @@ class LocationInterfaceController: WKInterfaceController {
         setTitle("Localización")
     }
 
+    @IBAction func getLocation() {
+        LocationInterfaceController.openParentApplication(["task": "getLocation"], reply: { (replyInfo: [NSObject : AnyObject]!, error: NSError!) -> Void in
+            NSLog("%@", replyInfo)
+        })
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797875B41B7920C2006C8DE0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797875B31B7920C2006C8DE0 /* LocationManager.swift */; };
 		A9212A941B78E2450002A417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212A931B78E2450002A417 /* AppDelegate.swift */; };
 		A9212A961B78E2450002A417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9212A951B78E2450002A417 /* ViewController.swift */; };
 		A9212A991B78E2450002A417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9212A971B78E2450002A417 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		797875B31B7920C2006C8DE0 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A9212A8E1B78E2450002A417 /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9212A921B78E2450002A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9212A931B78E2450002A417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				A9212A931B78E2450002A417 /* AppDelegate.swift */,
 				A9212A951B78E2450002A417 /* ViewController.swift */,
+				797875B31B7920C2006C8DE0 /* LocationManager.swift */,
 				A9212A971B78E2450002A417 /* Main.storyboard */,
 				A9212A9A1B78E2450002A417 /* Images.xcassets */,
 				A9212A9C1B78E2450002A417 /* LaunchScreen.xib */,
@@ -386,6 +389,7 @@
 			files = (
 				A9212A961B78E2450002A417 /* ViewController.swift in Sources */,
 				A9212A941B78E2450002A417 /* AppDelegate.swift in Sources */,
+				797875B41B7920C2006C8DE0 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +674,7 @@
 				A9212AAF1B78E2450002A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9212AB01B78E2450002A417 /* Build configuration list for PBXNativeTarget "GymAppTests" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +683,7 @@
 				A9212AB21B78E2450002A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9212AD01B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +692,7 @@
 				A9212AD21B78E42B0002A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9212AD31B78E42B0002A417 /* Build configuration list for PBXNativeTarget "GymApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +701,7 @@
 				A9212AD51B78E42B0002A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

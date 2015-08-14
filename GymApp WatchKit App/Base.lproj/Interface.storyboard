@@ -42,6 +42,11 @@
                         <group width="1" alignment="left" layout="vertical" id="94h-YY-iyB">
                             <items>
                                 <map height="100" alignment="left" id="Pu2-HS-J5d"/>
+                                <button width="1" alignment="left" title="get location" id="SfP-bc-SVg">
+                                    <connections>
+                                        <action selector="getLocation" destination="DWD-87-VVg" id="MEt-R8-Nco"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
